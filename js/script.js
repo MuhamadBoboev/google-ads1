@@ -2,7 +2,7 @@
 const burger = document.querySelector('.burger');
 const body = document.body;
 burger.addEventListener('click', function() {
-  let mainNav = document.querySelector('.menu__list');
+  let mainNav = document.querySelector('.header__menu');
   let burgerSpan = document.querySelector('.burger::after');
 
 
