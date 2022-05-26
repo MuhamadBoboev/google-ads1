@@ -32,10 +32,11 @@ a {
 body {
   font-family: "Futura PT Medium";
   font-size: 16px;
-  font-weight: 400;
   line-height: 130%;
+  font-weight: 400;
   margin: 0 auto;
   padding: 0;
+  line-height: 130%;
 }
 
 .visually-hidden {
@@ -75,8 +76,31 @@ body {
   display: none;
 }
 
+/****************** button ************************/
+.button {
+  display: inline-block;
+  font-family: "Futura PT Medium";
+  font-size: 16px;
+  line-height: 130%;
+  color: #F5F6F8;
+  background-color: #ED1B24;
+  padding: 15px 33px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 80px;
+}
+
+.button:hover, .button:focus {
+  background-color: #141B24;
+  color: #F5F6F8;
+}
+
+.button:focus {
+  background-color: #A5A5A5;
+  color: #F5F6F8;
+}
+
 /* **************** global class ******************* */
-/*******************header * *************/
 .header {
   position: fixed;
   width: 100%;
@@ -142,6 +166,7 @@ body {
 .manu__item {
   font-family: "Futura PT Light";
   font-size: 18px;
+  line-height: 130%;
 }
 
 .menu__link {
@@ -159,23 +184,6 @@ body {
 
 .menu__link:active {
   background-color: #ED1B24;
-  color: #F5F6F8;
-}
-
-.button {
-  display: inline-block;
-  font-family: "Futura PT Medium";
-  font-size: 16px;
-  color: #F5F6F8;
-  background-color: #ED1B24;
-  padding: 15px 33px;
-  border: none;
-  text-transform: uppercase;
-  border-radius: 80px;
-}
-
-.button:hover, .button:active {
-  background-color: #141B24;
   color: #F5F6F8;
 }
 
@@ -303,7 +311,6 @@ body {
 
   .header__block-logo {
     z-index: 11;
-    background-color: #FAF4EC;
   }
 
   .burger {
@@ -346,5 +353,260 @@ body {
 
   .header__menu.active {
     padding-top: 60px;
+  }
+}
+/******************* page **************/
+.page {
+  position: relative;
+}
+
+.main-body {
+  background-color: #FAF4EC;
+  padding-bottom: 60px;
+}
+
+.main-body_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.main-body__title {
+  font-family: "Futura PT Medium";
+  font-size: 54px;
+  line-height: 130%;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.main-body__title-text {
+  text-transform: uppercase;
+}
+
+.main-body__title-text__red {
+  color: #ED1B24;
+}
+
+.main-body__title-text__strong {
+  font-weight: 700;
+  color: #ED1B24;
+}
+
+.main-body__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 503px;
+  max-width: 503px;
+}
+
+.main-body__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #EDE6DD;
+  border-radius: 8px;
+}
+
+.main-body__grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.main-body__grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.main-body__grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.main-body__grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.main-body__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main-body__block-body {
+  position: relative;
+  padding: 20px 27px 44px;
+}
+
+.main-body__block__text {
+  margin-top: 10px;
+  max-width: 223px;
+}
+
+.main-body__block-body::after {
+  position: absolute;
+  content: "";
+  top: 75px;
+  right: 0;
+  background-color: #F5F6F8;
+  width: 6px;
+  height: 90px;
+}
+
+.main-body__block-body_last-child::after {
+  display: none;
+}
+
+.main-body__block-button {
+  display: none;
+  margin-top: 10px;
+}
+
+.main-body_button {
+  width: 100%;
+}
+
+@media (max-width: 1040px) {
+  .main-body__title {
+    font-size: 50px;
+    max-width: 500px;
+  }
+
+  .main-body__grid {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main-body__grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .main-body__grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .main-body__grid > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .main-body__grid > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .main-body__img-img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .main-body__img {
+    top: 109px;
+  }
+
+  .main-body__block-body::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .main-body {
+    padding-top: 55px;
+  }
+
+  .main-body__block-button {
+    display: block;
+  }
+
+  .main-body__title {
+    padding-top: 50px;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .main-body__title-text {
+    max-width: 290px;
+  }
+
+  .main-body__img {
+    top: 104px;
+    right: -20px;
+  }
+
+  .main-body__img-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main-body__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .main-body__grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .main-body__block-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px 10px 10px;
+    width: -webkit-fill-available;
+  }
+
+  .main-body__block__text {
+    text-align: start;
+    padding-top: 3px;
+    margin-left: 10px;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .main-body__block-body_last-child {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .main-body__img {
+    top: 135px;
+    right: -20px;
+  }
+
+  .main-body__img-img {
+    width: 150px;
+    height: 150px;
   }
 }
