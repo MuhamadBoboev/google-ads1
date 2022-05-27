@@ -55,6 +55,7 @@ body {
   background-color: $colorGDark;
   color: $colorWhite
 }
+
 /* **************** global class ******************* */
 
 @import 'header';
@@ -63,3 +64,11 @@ body {
   position: relative;
 }
 @import 'main-body';
+.font-title {
+  @include font ($fontFuture-Bold, 50px)
+}
+@import 'questions';
+@import 'write';
+@import 'suggestions';
+@import 'reviews';
+/* ********************** lets go **************** */

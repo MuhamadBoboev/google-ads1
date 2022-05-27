@@ -10,7 +10,7 @@
 }
 .main-body__title {
   @include font ($fontFuture-Medium, 54px);
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 60px;
 }
 .main-body__title-text {
@@ -25,7 +25,7 @@
 }
 .main-body__img {
   position: absolute;
-  top: 0;
+  top: 70px;
   right: 0;
   max-width: 503px;
   max-width: 503px;

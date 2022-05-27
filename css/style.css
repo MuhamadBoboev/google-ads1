@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Futura PT Medium";
-  src: local("Futura PT Medium"), local("Futura-PT-Medium"), url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Futura PT Bold";
+  src: local("Futura PT Bold"), local("Futura-PT-Bold"), url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "Futura PT Light";
-  src: local("Futura PT Light"), local("Futura-PT-Light"), url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "Futura PT Medium";
+  src: local("Futura PT Medium"), local("Futura-PT-Medium"), url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -17,9 +17,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Futura PT Bold";
-  src: local("Futura PT Bold"), local("Futura-PT-Bold"), url("../fonts/FuturaPT-Bold.woff2") format("woff2"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "Futura PT Light";
+  src: local("Futura PT Light"), local("Futura-PT-Light"), url("../fonts/FuturaPT-Light.woff2") format("woff2"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 /* ************ FONT *********** */
@@ -380,7 +380,7 @@ body {
   font-family: "Futura PT Medium";
   font-size: 54px;
   line-height: 130%;
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 60px;
 }
 
@@ -399,7 +399,7 @@ body {
 
 .main-body__img {
   position: absolute;
-  top: 0;
+  top: 70px;
   right: 0;
   max-width: 503px;
   max-width: 503px;
@@ -610,3 +610,485 @@ body {
     height: 150px;
   }
 }
+.font-title {
+  font-family: "Futura PT Bold";
+  font-size: 50px;
+  line-height: 130%;
+}
+
+.questions_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.questions__title {
+  margin-top: 70px;
+}
+
+.questions__title__text {
+  text-align: center;
+}
+
+.questions__title__strong-text {
+  color: #ED1B24;
+}
+
+.questions__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 105px;
+}
+
+.questions__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 180px;
+}
+
+.questions__block_2 {
+  text-align: start;
+}
+
+.questions__block_2 {
+  text-align: end;
+}
+
+.questions__block__text-block__p {
+  font-family: "Futura PT Medium";
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.questions__block__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions__block__img {
+  width: 172px;
+  height: 155px;
+  margin: 0px 10px;
+}
+
+.questions__block__text-block__p {
+  position: relative;
+}
+
+.questions__block__text-block__p::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EDE6DD;
+}
+
+.questions_fon__circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 40%;
+  border: 2px solid #EDE6DD;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.questions_fon__circle-1 {
+  width: 250px;
+  height: 250px;
+  top: 28%;
+  left: 42.3%;
+}
+
+.questions_fon__circle-2 {
+  width: 400px;
+  height: 400px;
+  top: 2%;
+  left: 36%;
+}
+
+.questions_fon__circle-3 {
+  width: 600px;
+  height: 600px;
+  top: -32%;
+  left: 27%;
+}
+
+.questions_fon__circle-4 {
+  width: 800px;
+  height: 800px;
+  top: -63%;
+  left: 17.5%;
+}
+
+.questions_fon__circle-5 {
+  width: 1000px;
+  height: 1000px;
+  top: -94%;
+  left: 8%;
+}
+
+.questions_fon__circle-6 {
+  width: 1200px;
+  height: 1200px;
+  top: -126%;
+  left: 0%;
+}
+
+@media (max-width: 1024px) {
+  .questions_fon__circle-1 {
+    left: 41%;
+  }
+
+  .questions_fon__circle-2 {
+    left: 36%;
+  }
+}
+@media (max-width: 940px) {
+  .questions_fon__circle-1 {
+    left: 40%;
+  }
+
+  .questions_fon__circle-2 {
+    left: 33%;
+  }
+
+  .questions_fon__circle-3 {
+    left: 24%;
+  }
+
+  .questions_fon__circle-4 {
+    left: 14.5%;
+  }
+
+  .questions_fon__circle-5 {
+    left: 4%;
+  }
+
+  .questions_fon__circle-5 {
+    left: -5%;
+  }
+}
+@media (max-width: 830px) {
+  .questions_fon__circle-1 {
+    left: 38%;
+  }
+
+  .questions_fon__circle-2 {
+    left: 30%;
+  }
+
+  .questions_fon__circle-3 {
+    left: 21%;
+  }
+
+  .questions_fon__circle-4 {
+    left: 10.5%;
+  }
+
+  .questions_fon__circle-5 {
+    left: -8%;
+  }
+
+  .questions_fon__circle-5 {
+    left: -12%;
+  }
+}
+@media (max-width: 768px) {
+  .questions {
+    display: none;
+  }
+}
+.write {
+  background-color: #ED1B24;
+}
+
+.write__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 38px 0;
+}
+
+.write__block-text {
+  display: block;
+  font-family: "Futura PT Book";
+  font-size: 24px;
+  line-height: 130%;
+  color: #F5F6F8;
+  margin-right: 136px;
+}
+
+.write_button {
+  padding: 14px 57px;
+  background-color: #F5F6F8;
+  color: #141B24;
+}
+
+.write_button:hover {
+  padding: 14px 57px;
+  background-color: #141B24;
+  color: #F5F6F8;
+}
+
+@media (max-width: 768px) {
+  .write {
+    display: none;
+  }
+}
+.suggestions_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.suggestions__main {
+  margin: 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.suggestions__title {
+  max-width: 420px;
+}
+
+.suggestions__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.suggestions__row {
+  position: relative;
+  cursor: pointer;
+}
+
+.suggestions__row__img {
+  display: none;
+  position: absolute;
+  bottom: -120px;
+  right: 30px;
+  width: 139px;
+  height: 91px;
+  background-color: #EDE6DD;
+  padding: 18px 26px 17px 17px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.suggestions__row__img.display {
+  display: inline;
+}
+
+.suggestions__row::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EDE6DD;
+}
+
+.suggestions__row_last::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #EDE6DD;
+}
+
+.suggestions__row_first {
+  margin-top: 20px;
+}
+
+.suggestions__row__text {
+  font-family: "Futura PT Book";
+  font-size: 26px;
+  line-height: 130%;
+  padding: 20px 0;
+}
+
+@media (max-width: 960px) {
+  .suggestions__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .suggestions__title {
+    max-width: none;
+  }
+
+  .suggestions__title-text {
+    text-align: center;
+  }
+
+  .suggestions__block {
+    margin-left: 0;
+  }
+
+  .font-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .suggestions {
+    display: none;
+  }
+}
+.reviews {
+  background-color: #EDE6DD;
+  margin-bottom: 100px;
+}
+
+.reviews__body {
+  padding-top: 41px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__title {
+  text-align: center;
+}
+
+.red-title {
+  color: #ED1B24;
+}
+
+.reviews__grid-rows-1 {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.3fr 22px 3fr;
+  grid-template-columns: 2.3fr 3fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 22px;
+}
+
+.reviews__grid-rows-1 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.reviews__grid-rows-1 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.reviews__block {
+  background-color: #F5F6F8;
+}
+
+.reviews__block__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 22px;
+  height: 100%;
+}
+
+.reviews__block-title {
+  display: block;
+  height: 20%;
+}
+
+.reviews__block-title__p {
+  font-family: "Futura PT Bold";
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.reviews__block-title__text {
+  margin-top: 10px;
+}
+
+.reviews__block-title__text__p {
+  font-family: "Futura PT Light";
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.reviews__grid-rows-2 {
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 22px 1fr 22px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 22px;
+}
+
+.reviews__grid-rows-2 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.reviews__grid-rows-2 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.reviews__grid-rows-2 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    display: none;
+  }
+}
+/* ********************** lets go **************** */

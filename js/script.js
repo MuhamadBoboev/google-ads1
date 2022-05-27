@@ -36,3 +36,18 @@ window.addEventListener('scroll', () => {
 
 	lastScrollTop = scrollDistance;
 });
+
+
+
+const suggestionsRow = document.querySelectorAll('.suggestions__row');
+suggestionsRow.forEach(function(event){
+  event.addEventListener('mouseover', function(){
+    event.querySelector('.suggestions__row__img').classList.toggle('display');
+  })
+  event.addEventListener('mouseout', function(){
+    event.querySelector('.suggestions__row__img').classList.toggle('display');
+
+  })
+})
+
+

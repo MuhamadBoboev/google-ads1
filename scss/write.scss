@@ -1,0 +1,31 @@
+.write {
+  background-color: $colorRed;
+}
+.write__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 0;
+}
+
+.write__block-text {
+  display: block;
+  @include font ($fontFuture-Book, 24px);
+  color: $colorWhite;
+  margin-right: 136px;
+}
+.write_button {
+  padding: 14px 57px;
+  background-color: $colorWhite;
+  color: $colorVeryDark;
+}
+.write_button:hover {
+  padding: 14px 57px;
+  background-color: $colorVeryDark;
+  color: $colorWhite;
+}
+@media (max-width:768px) {
+  .write {
+    display: none;
+  }
+}
