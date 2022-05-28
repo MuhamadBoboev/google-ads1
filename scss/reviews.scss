@@ -1,6 +1,5 @@
 .reviews {
   background-color: $colorBgMainBlock;
-  margin-bottom: 100px;
 }
 .reviews_container {
 
@@ -38,6 +37,7 @@
 }
 .reviews__block-title__p {
   @include font($fontFuture-Bold, 24px);
+  text-transform: uppercase;
 }
 .reviews__block-title__text {
   margin-top: 10px;

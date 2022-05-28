@@ -2,6 +2,7 @@
 
 a {
   text-decoration: none;
+  color: $colorVeryDark
 }
 body {
   @include font ($fontFuture-Medium, 16px);
@@ -65,10 +66,12 @@ body {
 }
 @import 'main-body';
 .font-title {
-  @include font ($fontFuture-Bold, 50px)
+  @include font ($fontFuture-Bold, 50px);
+  text-transform: uppercase;
 }
 @import 'questions';
 @import 'write';
 @import 'suggestions';
 @import 'reviews';
+@import 'contacts';
 /* ********************** lets go **************** */

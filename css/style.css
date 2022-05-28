@@ -27,6 +27,7 @@
 /* ********* mixin ************* */
 a {
   text-decoration: none;
+  color: #141B24;
 }
 
 body {
@@ -593,6 +594,7 @@ body {
     margin-left: 10px;
     max-width: none;
     margin-top: 0;
+    font-family: "Futura PT Book";
   }
 
   .main-body__block-body_last-child {
@@ -614,6 +616,7 @@ body {
   font-family: "Futura PT Bold";
   font-size: 50px;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 .questions_container {
@@ -880,7 +883,7 @@ body {
 }
 
 .suggestions__title {
-  max-width: 420px;
+  max-width: 450px;
 }
 
 .suggestions__block {
@@ -979,7 +982,6 @@ body {
 }
 .reviews {
   background-color: #EDE6DD;
-  margin-bottom: 100px;
 }
 
 .reviews__body {
@@ -1048,6 +1050,7 @@ body {
   font-family: "Futura PT Bold";
   font-size: 24px;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 .reviews__block-title__text {
@@ -1089,6 +1092,223 @@ body {
 @media (max-width: 768px) {
   .reviews {
     display: none;
+  }
+}
+.contacts-application {
+  margin-bottom: 100px;
+}
+
+.contacts-application_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.contacts-application_container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.contacts-application_container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.contacts__fon {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100vmax;
+  height: 100%;
+  background-color: #FAF4EC;
+  z-index: -1;
+}
+
+.contacts__title {
+  margin-top: 60px;
+}
+
+.contacts__block {
+  margin-top: 45px;
+}
+
+.contacts__text {
+  font-family: "Futura PT Medium";
+  font-size: 22px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.contacts__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__block-href {
+  padding: 21px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__block-href__a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__block-href_last {
+  margin-left: 50px;
+}
+
+.contacts__span {
+  margin-left: 10px;
+}
+
+.contacts__messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 28px;
+}
+.contacts__messenger a:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts__block_last {
+  margin-bottom: 85px;
+}
+
+/* ********** application ***************** */
+.application__body {
+  padding: 100px 0 100px 110px;
+}
+
+.application__title {
+  font-family: "Futura PT Bold";
+  font-size: 22px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.application__title_red {
+  color: #ED1B24;
+}
+
+.application__block {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.application__label {
+  font-weight: 450;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.application__input {
+  margin-top: 10px;
+  padding: 15px 20px;
+  background-color: #EDE6DD;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.application__text {
+  margin-top: 10px;
+  font-family: "Futura PT Book";
+  font-size: 16px;
+  line-height: 130%;
+}
+
+@media (max-width: 960px) {
+  .contacts {
+    display: none;
+  }
+
+  .contacts-application_container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .application__body {
+    padding: 0;
+  }
+
+  .application__title {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .application__text {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    display: none;
+  }
+
+  .contacts-application_container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .application__body {
+    padding: 0;
+  }
+
+  .application__title {
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .application__label {
+    font-size: 14px;
+  }
+
+  .application__input {
+    font-family: "Futura PT Light";
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .application__block {
+    margin-top: 20px;
+  }
+
+  .application__text {
+    text-align: center;
   }
 }
 /* ********************** lets go **************** */

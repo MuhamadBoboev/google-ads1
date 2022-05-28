@@ -1,0 +1,146 @@
+.contacts-application {
+  margin-bottom: 100px;
+}
+.contacts-application_container {
+  @include grid(1fr 1fr, 1fr);
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contacts__fon {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100vmax;
+  height: 100%;
+  background-color: $colorBG;
+  z-index: -1;
+}
+.contacts__title {
+  margin-top: 60px;
+}
+.contacts__block {
+  margin-top: 45px;
+}
+.contacts__text {
+  @include font($fontFuture-Medium, 22px);
+  text-transform: uppercase;
+
+}
+.contacts__element {
+  display: flex;
+}
+.contacts__block-href {
+  padding: 21px 0;
+  display: flex;
+  align-items: center;
+}
+.contacts__block-href__a {
+  display: flex;
+  align-items: center;
+}
+.contacts__block-href_last {
+  margin-left: 50px;
+}
+.contacts__span {
+  margin-left: 10px;
+}
+.contacts__messenger {
+  display: flex;
+  margin-top: 28px;
+  a:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+.contacts__block_last {
+  margin-bottom: 85px;
+}
+
+
+/* ********** application ***************** */
+.application {
+}
+.application__body {
+  padding: 100px 0 100px 110px;
+}
+.application__title {
+  @include font($fontFuture-Bold, 22px);
+  text-transform: uppercase;
+
+}
+.application__title_red {
+  color: $colorRed;
+}
+.application__block {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.application__label {
+  font-weight: 450;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.application__input {
+  margin-top: 10px;
+  padding: 15px 20px;
+  background-color: $colorBgMainBlock;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.application__text {
+  margin-top: 10px;
+  @include font($fontFuture-Book, 16px)
+}
+@media (max-width:960px) {
+  .contacts {
+    display: none;
+  }
+  .contacts-application_container {
+    grid-template-columns: 1fr;
+
+  }
+  .application__body {
+    padding: 0;
+  }
+  .application__title {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .application__text {
+    text-align: center;
+  }
+}
+@media (max-width:768px) {
+  .contacts {
+    display: none;
+  }
+  .contacts-application_container {
+    grid-template-columns: 1fr;
+
+  }
+  .application__body {
+    padding: 0;
+  }
+  .application__title {
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .application__label {
+    font-size: 14px;
+  }
+  .application__input {
+    @include font($fontFuture-Light, 12px);
+  }
+  .application__block {
+    margin-top: 20px;
+  }
+  .application__text {
+    text-align: center;
+  }
+}

@@ -50,4 +50,15 @@ suggestionsRow.forEach(function(event){
   })
 })
 
+const tellFormBlock = document.querySelectorAll('.application__input_number');
 
+tellFormBlock.forEach(function(event) {
+  event.addEventListener('focus', ()=> {
+      event.setAttribute('value','+7');
+
+    });
+    event.addEventListener('blur', ()=> {
+      event.removeAttribute('value','+7');
+
+    });
+})
