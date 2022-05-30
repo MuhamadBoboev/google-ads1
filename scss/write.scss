@@ -16,13 +16,6 @@
 }
 .write_button {
   padding: 14px 57px;
-  background-color: $colorWhite;
-  color: $colorVeryDark;
-}
-.write_button:hover {
-  padding: 14px 57px;
-  background-color: $colorVeryDark;
-  color: $colorWhite;
 }
 @media (max-width:768px) {
   .write {

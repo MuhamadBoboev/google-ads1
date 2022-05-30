@@ -7,11 +7,19 @@ burger.addEventListener('click', function() {
 
 
   mainNav.classList.toggle('active');
-  burger.classList.toggle('active')
+  burger.classList.toggle('active');
   body.classList.toggle('lock');
-  // alert('asdsda');
 })
 
+const itemNav = document.querySelectorAll('.manu__item');
+itemNav.forEach(function(event){
+  event.addEventListener('click', function(on){
+    body.classList.remove('lock');
+    let mainNav = document.querySelector('.header__menu');
+    mainNav.classList.remove('active');
+    burger.classList.remove('active');
+  })
+})
 /* ************** scroll ************** */
 const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;

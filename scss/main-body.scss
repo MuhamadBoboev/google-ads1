@@ -33,9 +33,31 @@
 .main-body__img-img {
 }
 .main-body__grid {
+  position: relative;
   @include grid(1fr 1fr 1fr 1fr, 1fr);
   background-color: $colorBgMainBlock;
   border-radius: 8px;
+}
+.main-body__messengers {
+  position: absolute;
+  top: 135px;
+  right: -15px;
+  width: 34px;
+  background-color: $colorWhite;
+  z-index: 1;
+  border-radius: 10px 0px 0px 10px;
+}
+.messengers__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  a {
+    height: 14px;
+  }
 }
 .main-body__block {
   display: flex;

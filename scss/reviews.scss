@@ -50,6 +50,12 @@
   @include grid (1fr 1fr 1fr, 1fr);
   grid-gap: 22px;
 }
+@media (max-width: 1024px) {
+  .reviews__block-title__text_second {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .reviews {
     display: none;

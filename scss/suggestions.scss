@@ -24,15 +24,15 @@
 
 .suggestions__row__img {
   display: none;
-    position: absolute;
-    bottom: -120px;
-    right: 30px;
-    width: 139px;
-    height: 91px;
-    background-color: $colorBgMainBlock;
-    padding: 18px 26px 17px 17px;
-    border-radius: 20px;
-    z-index: 1;
+  position: absolute;
+  bottom: -120px;
+  right: 30px;
+  width: 139px;
+  height: 105px;
+  background-color: $colorBgMainBlock;
+  padding: 18px 26px 17px 17px;
+  border-radius: 20px;
+  z-index: 1;
 }
 .suggestions__row__img.display {
   display: inline;

@@ -52,11 +52,22 @@ body {
   background-color: $colorVeryDark;
   color: $colorWhite;
 }
-.button:focus {
+.button:active, .button:focus {
   background-color: $colorGDark;
   color: $colorWhite
 }
-
+.white_button {
+  background-color: $colorWhite;
+  color: $colorVeryDark;
+}
+.white_button:hover {
+  background-color: $colorBgMainBlock;
+  color: $colorRed;
+}
+.white_button:active, .white_button:focus {
+  background-color: $colorGDark;
+  color: $colorWhite
+}
 /* **************** global class ******************* */
 
 @import 'header';
@@ -74,4 +85,5 @@ body {
 @import 'suggestions';
 @import 'reviews';
 @import 'contacts';
+@import 'footer';
 /* ********************** lets go **************** */
