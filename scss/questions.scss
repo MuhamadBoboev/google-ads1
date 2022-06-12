@@ -156,6 +156,33 @@
 }
 @media (max-width: 768px) {
   .questions {
+    // display: none;
+  }
+  .questions__title {
+    margin-top: 30px;
+  }
+  .questions_fon__circle {
     display: none;
+  }
+  .questions__block__center {
+    display: none;
+  }
+  .questions__flex {
+    flex-direction: column;
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .questions__block__text {
+  }
+  .questions__block {
+    height: max-content;
+    grid-gap: 20px;
+  }
+  .questions__block_2 {
+    text-align: start;
+  }
+  .questions__block__text-block__p {
+    font-size: 18px;
   }
 }
